@@ -51,7 +51,8 @@ A simple and responsive Todo List web app built with React, allowing users to ad
 6.**Open the Local URL (e.g., http://localhost:5173/) in your browser to view the app.**
 
 
-
+##  Live Demo
+Check out my todo list live here: **[todo list](https://varsha-boddapati-24.github.io/todo-list/)**
 
 ##  Contact Me
  **Email:** varshaboddapati24@gmail.com     
