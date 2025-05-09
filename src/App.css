@@ -1,0 +1,72 @@
+/* Styles the main app container with centered card layout, border, shadow, and vertical stacking */
+.app-container {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid brown;
+}
+
+
+/* Wraps heading + filter dropdown, uses spacing ,alignment  */
+.filter-container {
+  position: relative;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 20px;
+  
+}
+
+
+
+/* Styles the heading with bold, centered text */
+.todo-heading {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles the filter <select> element with  placement , styling and transition*/
+.filter-select {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 7px 10px;
+  border-radius: 8px;
+  background-color: brown;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease, filter 0.3s ease;
+}
+/* shadow effect on hover */
+.filter-select:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+ 
+}
+/* Responsive adjustments for small screens (<= 600px width) */
+@media (max-width: 600px) {
+  .filter-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .todo-heading {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}

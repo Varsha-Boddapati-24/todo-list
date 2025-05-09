@@ -1,0 +1,87 @@
+/* Styles individual todo items with a flex layout, padding, margin, and a light background */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width:90%;
+  }
+
+
+  /* Container for action buttons with spacing between them */
+  .action-container{
+    display: flex;
+    gap:30px
+  }
+  /* Container for buttons with spacing */
+  .btn-container{
+    display: flex;
+    gap:7px
+    
+  }
+  /* Styles the task checkbox, setting size and background */
+  .task-checkbox{
+    width: 18px;
+    height: 18px;
+    background: none;
+  }
+  
+/* Styles for edit and save buttons with color,font size and transition */
+  .editBtn,.saveBtn{
+    color: skyblue;
+    border: none;
+    background: none;
+    font-size: 18px;
+     transition: transform 0.2s ease-in-out, color 0.3s ease;
+    
+  }
+  /* Styles for delete and cancel buttons with brown color and transition */
+  .deleteBtn,.cancelBtn{
+    color: brown;
+    border: none;
+    background: none;
+    font-size: 18px;
+     transition: transform 0.2s ease-in-out, color 0.3s ease;
+  }
+
+  .editBtn:hover, .saveBtn:hover, .deleteBtn:hover, .cancelBtn:hover {
+  transform: scale(1.1); /* Slightly increase button size on hover */
+ 
+}
+
+/* Styles completed tasks with strike-through text and gray color */
+   .completed-task {
+    text-decoration: line-through;
+    color: grey;
+    overflow-wrap: anywhere; 
+    margin:10px
+  }
+  /* Styles checked checkboxes with a brown background and border */  
+  input[type="checkbox"]:checked {
+    background-color: brown; 
+    border-color: brown;
+  }
+  /* Styles span elements for text with word wrapping and margin */
+  .text-span{
+    overflow-wrap:  anywhere; 
+    margin:10px
+
+  }
+
+  /* Media query for smaller screens (<= 600px), adjusts button and action container gaps */
+  @media (max-width: 600px) {
+    .btn-container{
+        gap:4px;
+    }
+    .action-container{
+        gap:10px
+    }
+  }
+
+  
+  
+
