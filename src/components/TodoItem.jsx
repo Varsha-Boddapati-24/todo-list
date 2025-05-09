@@ -41,14 +41,12 @@ function TodoItem(props) {
                                 <>
                                  {/* Edit and Delete buttons when not in edit mode */}
                                     <button className="editBtn" onClick={() => {
-                                        console.log("clicked the edit button")
                                          // Trigger edit mode for this task
                                         props.onEdit(props.task.id, props.task.text)
                                     }
                                     }> <i className="fas fa-edit"></i></button>
                                     <button className="deleteBtn" onClick={()=>
                                         {
-                                            console.log("inside the dlete")
                                             // Trigger delete task action
                                             props.onDelete(props.task.id)
                                         }

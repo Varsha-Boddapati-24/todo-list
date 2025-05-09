@@ -33,7 +33,6 @@ function App() {
 
   // Initializes edit mode for a task by setting its ID and existing text
   const editTask = (id, text) => {
-    console.log("inisde the click of app")
     setEditText(text)
     setEditTaskId(id)
   }
@@ -54,9 +53,7 @@ function App() {
 
    // Deletes a task by filtering it out from the state array
   const onDelete = (id) => {
-    console.log("onDelete app")
     const updatedtasks = tasks.filter((task) => task.id !== id)
-    console.log("updatedtasks", updatedtasks)
     setTasks(updatedtasks);
 
   }
