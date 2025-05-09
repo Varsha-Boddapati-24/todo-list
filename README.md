@@ -41,7 +41,7 @@ A simple and responsive Todo List web app built with React, allowing users to ad
       npm i
   5. **Run the following command**
       ```bash
-     npm run start
+     npm run dev
 
      After running the above command, Vite will start the development server.
      You will see an output like this in your terminal:
