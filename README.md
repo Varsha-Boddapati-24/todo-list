@@ -46,9 +46,9 @@ A simple and responsive Todo List web app built with React, allowing users to ad
      After running the above command, Vite will start the development server.
      You will see an output like this in your terminal:
        VITE vX.X.X  ready in XXX ms
-      ➜  Local:   http://localhost:5173/
+      ➜  Local:   http://localhost:5173/todo-list/
       ➜  Network: use --host to expose
-6.**Open the Local URL (e.g., http://localhost:5173/) in your browser to view the app.**
+6.**Open the Local URL (e.g., http://localhost:5173/todo-list/) in your browser to view the app.**
 
 
 
